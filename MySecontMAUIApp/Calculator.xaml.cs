@@ -43,7 +43,6 @@ public partial class Calculator : ContentPage
 			PrintToInputView(button.Text);
 		}
 		else {
-            //TODO: Добавить возможность ввода отрицательных чисел + вызов функции "Равно" перед каждым действием, если в InputView есть число и текущая операция не пустая
             switch (button.Text) {
                 case "C":
                     ResetCalculator();
@@ -110,6 +109,9 @@ public partial class Calculator : ContentPage
                     currentOperation = Operation.MULTIPLY;
                     ClearInputView();
 					break;
+                case ".":
+                    if (!InputView.Text.Contains('.')) PrintToInputView(".");
+                    break;
                 case "=":
                     CalculateResult();
                     break;
