@@ -13,14 +13,14 @@
                 <Setter Property="TextColor" Value="#212136"/>
             </Style>
             <Style x:Key="DarkButton" TargetType="Button" BasedOn="{StaticResource LightButton}">
-                <Setter Property="BackgroundColor" Value="#333398"/>
+                <Setter Property="BackgroundColor" Value="#2D2DBA"/>
             </Style>
             <Style x:Key="Label" TargetType="Label">
                 <Setter Property="FontSize" Value="25"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="TextColor" Value="#f5f9ff"/>
                 <Setter Property="HorizontalTextAlignment" Value="End"/>
-                <Setter Property="Padding" Value="0 25"/>
+                <Setter Property="Padding" Value="25, 0, 25, 0"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

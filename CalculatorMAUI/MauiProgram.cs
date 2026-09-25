@@ -8,11 +8,9 @@ namespace MySecondMAUIApp
         static MauiProgram() {
             var customCulture = CultureInfo.InvariantCulture;
 
-            // Устанавливаем её по умолчанию для всех новых потоков в приложении
             CultureInfo.DefaultThreadCurrentCulture = customCulture;
             CultureInfo.DefaultThreadCurrentUICulture = customCulture;
 
-            // Теперь текущий поток тоже переключаем на эту культуру
             Thread.CurrentThread.CurrentCulture = customCulture;
             Thread.CurrentThread.CurrentUICulture = customCulture;
         }
@@ -28,9 +26,9 @@ namespace MySecondMAUIApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
+            #if DEBUG
     		builder.Logging.AddDebug();
-#endif
+            #endif
 
             return builder.Build();
         }

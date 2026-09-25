@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CalculatorMAUI/CalculatorMAUI.csproj">
+    <BuildType Project="Release" />
+    <Deploy />
+  </Project>
+</Solution>
